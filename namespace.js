@@ -1,10 +1,10 @@
 var MORA0198 = {
     init: function(){
-        var z = document.createElement("div");
+        let div = document.createElement("div");
         z.className = "box";
         z.textContent = "Mora0198";
         
-        let boxes = document.getElementById("boxes").appendChild(z);
+        let box = document.getElementById("boxes").appendChild(z);
 
         z.addEventListener("click", Click);
         z.addEventListener("mouseover", mouseOver);
