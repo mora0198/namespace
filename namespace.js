@@ -1,9 +1,9 @@
 var MORA0198 = {
-    init: function(){
+    init: function () {
         let z = document.createElement("div");
         z.className = "box";
         z.textContent = "Mora0198";
-        
+
         let box = document.getElementById("boxes").appendChild(z);
 
         z.addEventListener("click", Click);
@@ -12,18 +12,16 @@ var MORA0198 = {
     }
 
     function Click() {
-    this.style.borderColor = "blue";
-    this.style.backgroundColor = "orange";
-}
-function Over() {
-    this.classList.toggle("highlight");
-}
-function Out() {
-    this.removeAttribute("style");
-    this.classList.toggle("highlight");
-}
-}
+        this.style.borderColor = "blue";
+        this.style.backgroundColor = "orange";
+    }
 
+    function Over() {
+        this.classList.toggle("highlight");
+    }
 
-
-
+    function Out() {
+        this.removeAttribute("style");
+        this.classList.toggle("highlight");
+    }
+}
