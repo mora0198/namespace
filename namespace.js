@@ -1,26 +1,26 @@
 var MORA0198 = {
     init: function(){
-        let div = document.createElement("div");
+        let z = document.createElement("div");
         z.className = "box";
         z.textContent = "Mora0198";
         
         let box = document.getElementById("boxes").appendChild(z);
 
         z.addEventListener("click", Click);
-        z.addEventListener("mouseover", mouseOver);
-        z.addEventListener("mouseout", mouseOut);
+        z.addEventListener("mouseover", Over);
+        z.addEventListener("mouseout", Out);
     }
-
-}
-
 function click() {
     this.style.borderColor = "blue";
     this.style.backgroundColor = "orange";
 }
-function mouseOver() {
+function Over() {
     this.classList.toggle("highlight");
 }
-function mouseOut() {
+function Out() {
     this.removeAttribute("style");
     this.classList.toggle("highlight");
 }
+}
+
+
