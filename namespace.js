@@ -1,25 +1,22 @@
 var MORA1980 = {
-    init: function(){
+    init: function () {
         let z = document.createElement("div");
         z.className = "box";
-        z.textContent = "Mora198";
-        
-        let box = document.getElementById("boxes").appendChild(z);
+        z.textContent = "Mora1980";
 
-        z.addEventListener("click", Click);
-        z.addEventListener("mouseover", Over);
-        z.addEventListener("mouseout", Out);
+        let boxes = document.getElementById("boxes").appendChild(z);
+
+        z.addEventListener("click", function () {
+            z.style.borderColor = "blue";
+            z.style.backgroundColor = "orange";
+        });
+        z.addEventListener("mouseover", function () {
+            z.classList.toggle("highlight");
+        });
+        z.addEventListener("mouseout", function () {
+            z.removeAttribute("style");
+            z.classList.toggle("highlight");
+        });
     }
-function click() {
-    this.style.borderColor = "blue";
-    this.style.backgroundColor = "orange";
-}
-function Over() {
-    this.classList.toggle("highlight");
-}
-function Out() {
-    this.removeAttribute("style");
-    this.classList.toggle("highlight");
-}
 
 }
