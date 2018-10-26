@@ -4,7 +4,7 @@ var MORA0198 = {
         z.className = "box";
         z.textContent = "Mora0198";
 
-        let box = document.getElementById("boxes").appendChild(z);
+        let boxes = document.getElementById("boxes").appendChild(z);
 
         z.addEventListener("click", function () {
             z.style.borderColor = "blue";
