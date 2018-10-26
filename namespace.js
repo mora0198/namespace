@@ -10,6 +10,8 @@ var MORA0198 = {
         z.addEventListener("mouseover", Over);
         z.addEventListener("mouseout", Out);
     }
+
+}
 function Click() {
     this.style.borderColor = "blue";
     this.style.backgroundColor = "orange";
@@ -20,7 +22,6 @@ function Over() {
 function Out() {
     this.removeAttribute("style");
     this.classList.toggle("highlight");
-}
 }
 
 
