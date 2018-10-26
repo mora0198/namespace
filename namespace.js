@@ -6,21 +6,20 @@ var MORA0198 = {
 
         let box = document.getElementById("boxes").appendChild(z);
 
-        z.addEventListener("click", clickButton);
-        z.addEventListener("mouseover", Over);
-        z.addEventListener("mouseout", Out);
+        z.addEventListener("click", function () {
+            z.style.borderColor = "blue";
+            z.style.backgroundColor = "orange";
+        });
+        z.addEventListener("mouseover", function () {
+            z.classList.toggle("highlight");
+        });
+        z.addEventListener("mouseout", function () {
+            z.removeAttribute("style");
+            z.classList.toggle("highlight");
+        });
     }
 
-    function clickButton() {
-        this.style.borderColor = "blue";
-        this.style.backgroundColor = "orange";
-    }
-    function Over() {
-        this.classList.toggle("highlight");
-    }
-
-    function Out() {
-        this.removeAttribute("style");
-        this.classList.toggle("highlight");
-    }
 }
+
+
+
