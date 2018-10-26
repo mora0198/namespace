@@ -1,8 +1,8 @@
 var MORA1980 = {
-    init: function(main_page){
-        let div = document.createElement("div");
+    init: function(){
+        let z = document.createElement("div");
         z.className = "box";
-        z.textContent = "Mora198";0
+        z.textContent = "Mora198";
         
         let box = document.getElementById("boxes").appendChild(z);
 
