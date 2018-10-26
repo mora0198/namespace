@@ -6,16 +6,15 @@ var MORA0198 = {
 
         let box = document.getElementById("boxes").appendChild(z);
 
-        z.addEventListener("click", Click);
+        z.addEventListener("click", clickButton);
         z.addEventListener("mouseover", Over);
         z.addEventListener("mouseout", Out);
     }
 
-    function Click() {
+    function clickButton() {
         this.style.borderColor = "blue";
         this.style.backgroundColor = "orange";
     }
-
     function Over() {
         this.classList.toggle("highlight");
     }
