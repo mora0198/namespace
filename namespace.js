@@ -1,8 +1,8 @@
-var MORA0198 = {
+var MORA1980 = {
     init: function () {
         let z = document.createElement("div");
         z.className = "box";
-        z.textContent = "Mora0198";
+        z.textContent = "Mora1980";
 
         let boxes = document.getElementById("boxes").appendChild(z);
 
