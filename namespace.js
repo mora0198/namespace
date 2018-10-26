@@ -1,14 +1,14 @@
 var MORA1980 = {
     init: function(){
-        let e = document.createElement("div");
-        e.className = "box";
-        e.textContent = "Mora198";
+        let z = document.createElement("div");
+        z.className = "box";
+        z.textContent = "Mora198";
         
-        let box = document.getElementById("boxes").appendChild(e);
+        let box = document.getElementById("boxes").appendChild(z);
 
-        e.addEventListener("click", Click);
-        e.addEventListener("mouseover", Over);
-        e.addEventListener("mouseout", Out);
+        z.addEventListener("click", Click);
+        z.addEventListener("mouseover", Over);
+        z.addEventListener("mouseout", Out);
     }
 function click() {
     this.style.borderColor = "blue";
