@@ -10,8 +10,6 @@ var MORA1980 = {
         e.addEventListener("mouseover", Over);
         e.addEventListener("mouseout", Out);
     }
-
-}
 function click() {
     this.style.borderColor = "blue";
     this.style.backgroundColor = "orange";
@@ -22,4 +20,6 @@ function Over() {
 function Out() {
     this.removeAttribute("style");
     this.classList.toggle("highlight");
+}
+
 }
