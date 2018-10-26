@@ -12,6 +12,7 @@ var MORA0198 = {
     }
 
 }
+
 function Click() {
     this.style.borderColor = "blue";
     this.style.backgroundColor = "orange";
